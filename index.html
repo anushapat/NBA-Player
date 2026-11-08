@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player Hub | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🏀 NBA <span>PLAYER HUB</span></a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#players">Players</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="nav-button">Sign Up</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <p class="eyebrow">YOUR HOME FOR NBA INFORMATION</p>
+        <h1>Explore the Game.<br><span>Know the Players.</span></h1>
+        <p class="hero-description">
+            Search NBA players, explore statistics, and stay connected
+            with the basketball community.
+        </p>
+
+        <form class="search-form" id="searchForm">
+            <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search for an NBA player..."
+                aria-label="Search NBA players"
+            >
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="players-section" id="players">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">PLAYER DATABASE</p>
+                <h2>Explore NBA Players</h2>
+            </div>
+            <span class="sample-label">SAMPLE DATA</span>
+        </div>
+
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+
+        <div class="player-grid" id="playerGrid">
+
+            <article class="player-card" data-name="lebron james">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">LOS ANGELES LAKERS</p>
+                <h3>LeBron James</h3>
+                <div class="stats">
+                    <div><strong>25.7</strong><span>PPG</span></div>
+                    <div><strong>7.3</strong><span>RPG</span></div>
+                    <div><strong>8.3</strong><span>APG</span></div>
+                </div>
+            </article>
+
+            <article class="player-card" data-name="stephen curry">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">GOLDEN STATE WARRIORS</p>
+                <h3>Stephen Curry</h3>
+                <div class="stats">
+                    <div><strong>23.5</strong><span>PPG</span></div>
+                    <div><strong>4.5</strong><span>RPG</span></div>
+                    <div><strong>6.0</strong><span>APG</span></div>
+                </div>
+            </article>
+
+            <article class="player-card" data-name="jayson tatum">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">BOSTON CELTICS</p>
+                <h3>Jayson Tatum</h3>
+                <div class="stats">
+                    <div><strong>26.8</strong><span>PPG</span></div>
+                    <div><strong>8.7</strong><span>RPG</span></div>
+                    <div><strong>6.0</strong><span>APG</span></div>
+                </div>
+            </article>
+
+            <article class="player-card" data-name="nikola jokic">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">DENVER NUGGETS</p>
+                <h3>Nikola Jokic</h3>
+                <div class="stats">
+                    <div><strong>29.6</strong><span>PPG</span></div>
+                    <div><strong>12.7</strong><span>RPG</span></div>
+                    <div><strong>10.2</strong><span>APG</span></div>
+                </div>
+            </article>
+
+            <article class="player-card" data-name="giannis antetokounmpo">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">MILWAUKEE BUCKS</p>
+                <h3>Giannis Antetokounmpo</h3>
+                <div class="stats">
+                    <div><strong>30.4</strong><span>PPG</span></div>
+                    <div><strong>11.5</strong><span>RPG</span></div>
+                    <div><strong>6.5</strong><span>APG</span></div>
+                </div>
+            </article>
+
+            <article class="player-card" data-name="luka doncic">
+                <div class="player-icon">🏀</div>
+                <p class="team-label">LOS ANGELES LAKERS</p>
+                <h3>Luka Doncic</h3>
+                <div class="stats">
+                    <div><strong>28.2</strong><span>PPG</span></div>
+                    <div><strong>8.1</strong><span>RPG</span></div>
+                    <div><strong>7.5</strong><span>APG</span></div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="data-note">
+            Note: Player statistics shown are illustrative sample data,
+            not verified live NBA statistics.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>🏀 NBA Player Hub | IT342 Cloud Administration Project</p>
+    <p>Explore players. Celebrate basketball.</p>
+</footer>
+
+</body>
+</html>
